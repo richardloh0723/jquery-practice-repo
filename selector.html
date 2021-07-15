@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery.js"></script>
+    <title>aloha</title>
+    <script>
+        /*
+         $: for jQuery
+          (""): target our selector
+        */
+        var newText = $("<p>");
+        newText.append("<h1>I just replaced something!</h1>");
+        $("document").ready(function () {
+            // add another selector
+            // in this case, were choosing h1
+            // and modify their css 
+            $("#textBox").html(newText);
+        });
+    </script>
+</head>
+
+<body>
+    <div id="textBox" class="">
+        Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Doloremque, dolore blanditiis
+        ullam sit autem dolorem illum ex vel ipsam saepe,
+        quaerat libero quidem delectus praesentium?
+    </div>
+</body>
+
+</html>
